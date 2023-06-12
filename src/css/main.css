@@ -77,7 +77,7 @@ body {
       body #section1 #introduction .photoContainer img {
         box-shadow: 0 8px 10px -1px rgba(0, 0, 0, 0.5); }
       body #section1 #introduction .briefDescription {
-        background-color: #081c15b3;
+        background-color: #081c15bd;
         color: white;
         font-weight: 500;
         letter-spacing: 1.5px;
@@ -95,3 +95,30 @@ body {
           body #section1 #introduction .briefDescription p span {
             text-align: end;
             font-weight: 700; }
+  body #section2 {
+    margin-top: 180px; }
+    body #section2 .divisionSec2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 30px; }
+      body #section2 .divisionSec2 .lineSec2 {
+        border: none;
+        border-top: 1px solid #081c15;
+        width: 85px; }
+      body #section2 .divisionSec2 h2 {
+        color: #081c15;
+        align-self: center;
+        display: inline-block;
+        font-size: 24px; }
+    body #section2 #lineSec2_profesion {
+      text-align: center;
+      padding: 5px;
+      color: #081c15;
+      margin-bottom: 10px;
+      font-size: 16px; }
+    body #section2 img {
+      width: 100px;
+      height: 100px;
+      margin: auto; }

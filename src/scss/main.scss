@@ -67,7 +67,7 @@ body {
       box-shadow:0 8px 10px -1px rgba(0, 0, 0, 0.5);
       }
       .briefDescription {
-        background-color: #081c15b3;
+        background-color: #081c15bd;
         color: white;
         font-weight: 500;
         letter-spacing: 1.5px;
@@ -89,5 +89,40 @@ body {
       }
       }
     }
+  }
+  #section2 {
+    margin-top: 180px;
+    .divisionSec2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+    .lineSec2 {
+      border: none;
+      border-top: 1px solid #081c15;
+      width: 85px;
+    }
+    h2 {
+      color: #081c15;
+      align-self: center;
+      display: inline-block;
+      font-size: 24px;
+    }
+    }
+    #lineSec2_profesion {
+      text-align: center;
+      padding: 5px;
+      color: #081c15;
+      margin-bottom: 10px;
+      font-size: 16px;
+      
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+      }
+
   }
 }
