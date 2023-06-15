@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Migue's Portfolio</title>
   </head>
@@ -18,28 +19,75 @@
           <li>Contact me</li>
         </ul>
       </nav>
+      <div class="content">
+        <div class="visible">
+          <p>Hello</p>
+          <ul>
+            <li>World !</li>
+            <li>Recruiters !</li>
+          </ul>
+        </div>
+      </div>
+      <p class="presentation">Nice to meet you. I'm Miguel,
+        <br> A curious web developer.</p>
+      
       <div id="introduction">
         <div class="photoContainer">
-          <img src="./assets/img/IMG_0650.png" class="rounded-full object-cover object-center" alt="">
+          <img
+            src="./assets/img/IMG_0650.png"
+            class="rounded-full object-cover object-center"
+            alt=""
+          />
         </div>
         <div class="briefDescription">
-          <p>"Aspiro a ser parte del cambio y la transformación en el mundo de la tecnología, impulsando soluciones que mejoren la calidad de vida de las personas y la sociedad en su conjunto."
-            <br><span>Miguel Arenas</span></p>
+          <p>
+            "I aspire to be part of the change and transformation in the world of technology, driving solutions that improve the quality of life for individuals and society as a whole." <!-- <br /><span
+              >Miguel Arenas</span
+            > -->
+          </p>
         </div>
       </div>
     </section>
     <section id="section2">
       <div class="divisionSec2">
-      <hr class="lineSec2">
-      <h2 id="whoIAm">Who I Am</h2>
-      <hr class="lineSec2">
+        <hr class="lineSec2" />
+        <h2 id="whoIAm">Who I Am</h2>
+        <hr class="lineSec2" />
       </div>
-      <img src="./assets/img/ubaFceLogo/UBA.png" alt="">
-      <p id="lineSec2_profesion">Licenciado en Administración</p>
-      <img src="./assets/img/ubaFceLogo/logoCoderHouse.webp" alt="">
-      <p id="lineSec2_profesion">FullStack Web Developer</p>
-      <p>Apasionado por el aprendizaje constante y decidido a generar un impacto positivo en mi primer empleo en IT. Combino habilidades técnicas, de gestión y adaptabilidad para enfrentar desafíos. Mi compromiso con el crecimiento personal y profesional me impulsa a buscar oportunidades para expandir conocimientos y contribuir de manera significativa en proyectos innovadores. Listo para abrir la puerta al cambio y aportar valor en el mundo de la tecnología.</p>
+      <div class="careers">
+        <div class="career" data-aos="fade-left"
+     data-aos-duration="2000">
+          <img src="./assets/img/ubaFceLogo/UBA.png" alt="" />
+          <p id="lineSec2_profesion" >
+            Licenciado en Administración
+          </p>
+        </div>
+        <div class="career" data-aos="fade-right"
+     data-aos-duration="2000">
+          <img src="./assets/img/ubaFceLogo/logoCoderHouse.webp" alt="" />
+          <p id="lineSec2_profesion" >
+            FullStack Developer Jr.
+          </p>
+        </div>
+      </div>
+
+      <!-- <p>
+        Apasionado por el aprendizaje constante y decidido a generar un impacto
+        positivo en mi primer empleo en IT. Combino habilidades técnicas, de
+        gestión y adaptabilidad para enfrentar desafíos. Mi compromiso con el
+        crecimiento personal y profesional me impulsa a buscar oportunidades
+        para expandir conocimientos y contribuir de manera significativa en
+        proyectos innovadores. Listo para abrir la puerta al cambio y aportar
+        valor en el mundo de la tecnología.
+      </p> -->
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+      
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    
     <script src="./js/main.js"></script>
   </body>
 </html>
