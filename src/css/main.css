@@ -41,7 +41,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   color: white; }
   body #section1 {
-    background-color: #40916c;
+    background: linear-gradient(45deg, #52b788, #40916c, #081c15);
     height: 380px;
     border-radius: 0 0 0 130px; }
     body #section1 #navBar .navBar_menu {
@@ -73,12 +73,12 @@ body {
       margin-top: 45px;
       margin-left: 60px; }
       body #section1 .content:before {
-        content: '[';
+        content: '{';
         position: absolute;
         left: 35px;
         line-height: 40px; }
       body #section1 .content:after {
-        content: ']';
+        content: '}';
         position: absolute;
         right: 45px;
         line-height: 40px; }
@@ -139,9 +139,10 @@ body {
   100% {
     margin-top: 0; } }
     body #section1 .presentation {
+      font-size: 18px;
+      font-weight: 600;
       text-align: end;
-      margin: 20px;
-      margin-left: 20px;
+      margin: 35px 20px;
       letter-spacing: 1px; }
     body #section1 #introduction {
       width: 300px;
@@ -150,16 +151,18 @@ body {
       flex-direction: column;
       align-items: center;
       gap: 15px;
-      margin: 40px auto;
+      margin: 45px auto;
       padding: 10px;
-      border-radius: 20px; }
+      border-radius: 20px;
+      box-shadow: 0 8px 10px -1px rgba(0, 0, 0, 0.5); }
       body #section1 #introduction .photoContainer img {
         box-shadow: 0 8px 10px -1px rgba(0, 0, 0, 0.5); }
       body #section1 #introduction .briefDescription {
         background-color: #081c15bd;
         color: white;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 1.5px;
+        font-style: italic;
         width: 260px;
         text-align: left;
         margin: auto auto 15px;
@@ -167,31 +170,32 @@ body {
         font-size: 14px;
         box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.5);
         border-radius: 5px; }
-        body #section1 #introduction .briefDescription p {
+        body #section1 #introduction .briefDescription blockquote {
           text-align: left;
+          line-height: 25px;
           display: flex;
           flex-direction: column; }
-          body #section1 #introduction .briefDescription p span {
+          body #section1 #introduction .briefDescription blockquote span {
             text-align: end;
             font-weight: 700; }
-  body #section2 {
-    margin-top: 280px; }
-    body #section2 .divisionSec2 {
+  body #section2, body #section3 {
+    margin-top: 350px; }
+    body #section2 .divisionSec2, body #section3 .divisionSec2, body #section3 .divisionSec3 {
       display: flex;
       align-items: center;
       gap: 8px;
       justify-content: center;
       margin-bottom: 30px; }
-      body #section2 .divisionSec2 .lineSec2 {
+      body #section2 .divisionSec2 .lineSec2, body #section3 .divisionSec2 .lineSec2, body #section3 .divisionSec3 .lineSec2, body #section3 .divisionSec3 .lineSec3 {
         border: none;
         border-top: 1px solid #081c15;
         width: 85px; }
-      body #section2 .divisionSec2 h2 {
+      body #section2 .divisionSec2 h2, body #section3 .divisionSec2 h2, body #section3 .divisionSec3 h2 {
         color: #081c15;
         align-self: center;
         display: inline-block;
         font-size: 24px; }
-    body #section2 .careers {
+    body #section2 .careers, body #section3 .careers {
       width: 300px;
       background: linear-gradient(45deg, #40916c, #52b788, #95d5b2);
       display: flex;
@@ -201,23 +205,23 @@ body {
       margin: 40px auto;
       padding: 10px;
       border-radius: 20px; }
-      body #section2 .careers .career {
+      body #section2 .careers .career, body #section3 .careers .career {
         display: flex;
         flex-direction: column;
         gap: 5px;
         align-items: center;
         overflow: hidden; }
-        body #section2 .careers .career #lineSec2_profesion {
+        body #section2 .careers .career #lineSec2_profesion, body #section3 .careers .career #lineSec2_profesion {
           text-align: center;
           padding: 5px;
           color: #081c15;
           margin-bottom: 10px;
           font-size: 16px; }
-        body #section2 .careers .career img {
+        body #section2 .careers .career img, body #section3 .careers .career img {
           width: 100px;
           height: 100px;
           justify-self: center; }
-        body #section2 .careers .career .focus-in-expand {
+        body #section2 .careers .career .focus-in-expand, body #section3 .careers .career .focus-in-expand {
           animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @keyframes focus-in-expand {
@@ -228,3 +232,24 @@ body {
   100% {
     filter: blur(0px);
     opacity: 1; } }
+    body #section2 #aboutMe, body #section3 #aboutMe {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      color: #081c15;
+      margin: 10px; }
+      body #section2 #aboutMe p, body #section3 #aboutMe p {
+        padding-left: 5px;
+        border-left: outset 2px;
+        text-align: left;
+        line-height: 25px; }
+      body #section2 #aboutMe p:nth-child(2), body #section3 #aboutMe p:nth-child(2) {
+        padding-left: 5px;
+        display: none;
+        text-align: left;
+        border-right: outset 2px; }
+  body #section3 {
+    margin-top: 30px; }
+    body #section3 .projects {
+      display: flex;
+      flex-direction: column; }
