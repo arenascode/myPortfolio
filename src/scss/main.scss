@@ -255,7 +255,7 @@ ul li {
       p {
         padding-left: 5px;  
         border-left: outset 2px;
-        text-align: left;
+        text-align: center;
         line-height: 25px;
       }
       p:nth-child(2) {
@@ -278,8 +278,55 @@ ul li {
       .projects {
         display: flex;
         flex-direction: column;
-        
-
+        .iphone-border {
+          margin: auto;
+          width: 300px; /* Ancho del div */
+          height: 500px; /* Alto del div */
+          border-radius: 36px; /* Radio de la esquina */
+          background-color: #000;
+          position: relative;
+          overflow: hidden;
+}
+        .iphone-border::before {
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: 12px;
+          right: 12px;
+          bottom: 12px;
+          border: 3px solid #666; /* Color del borde */
+          border-radius: 30px; /* Radio del borde */
+          box-sizing: border-box;
+          z-index: 1;
+        }
+        .iphone-border::after {
+          content: "";
+          position: absolute;
+          bottom: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 60px;
+          height: 6px;
+          background-color: #666; /* Color de la barra inferior */
+          border-radius: 3px;
+          z-index: 1;
+        }
+        .screen {
+          position: relative;
+          overflow: hidden;
+          width: 95%;
+          height: 98%;
+          border-radius: 36px;
+          padding-left: 15px;
+          padding-top: 10px;
+          img {
+          // display: block;
+          width: 100%;
+          height: 100%;
+          // object-fit: contain;
+          border-radius: 36px;
+        }
+}
       }
     }
 }
