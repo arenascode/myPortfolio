@@ -178,24 +178,24 @@ body {
           body #section1 #introduction .briefDescription blockquote span {
             text-align: end;
             font-weight: 700; }
-  body #section2, body #section3 {
+  body #section2, body #section3, body #section4 {
     margin-top: 350px; }
-    body #section2 .divisionSec2, body #section3 .divisionSec2, body #section3 .divisionSec3 {
+    body #section2 .divisionSec2, body #section3 .divisionSec2, body #section4 .divisionSec2, body #section4 .divisionSec4 {
       display: flex;
       align-items: center;
       gap: 8px;
       justify-content: center;
       margin-bottom: 30px; }
-      body #section2 .divisionSec2 .lineSec2, body #section3 .divisionSec2 .lineSec2, body #section3 .divisionSec3 .lineSec2, body #section3 .divisionSec3 .lineSec3 {
+      body #section2 .divisionSec2 .lineSec2, body #section3 .divisionSec2 .lineSec2, body #section4 .divisionSec2 .lineSec2, body #section4 .divisionSec4 .lineSec2, body #section4 .divisionSec4 .lineSec4 {
         border: none;
         border-top: 1px solid #081c15;
         width: 85px; }
-      body #section2 .divisionSec2 h2, body #section3 .divisionSec2 h2, body #section3 .divisionSec3 h2 {
+      body #section2 .divisionSec2 h2, body #section3 .divisionSec2 h2, body #section4 .divisionSec2 h2, body #section4 .divisionSec4 h2 {
         color: #081c15;
         align-self: center;
         display: inline-block;
         font-size: 24px; }
-    body #section2 .careers, body #section3 .careers {
+    body #section2 .careers, body #section3 .careers, body #section4 .careers {
       width: 300px;
       background: linear-gradient(45deg, #40916c, #52b788, #95d5b2);
       display: flex;
@@ -205,23 +205,23 @@ body {
       margin: 40px auto;
       padding: 10px;
       border-radius: 20px; }
-      body #section2 .careers .career, body #section3 .careers .career {
+      body #section2 .careers .career, body #section3 .careers .career, body #section4 .careers .career {
         display: flex;
         flex-direction: column;
         gap: 5px;
         align-items: center;
         overflow: hidden; }
-        body #section2 .careers .career #lineSec2_profesion, body #section3 .careers .career #lineSec2_profesion {
+        body #section2 .careers .career #lineSec2_profesion, body #section3 .careers .career #lineSec2_profesion, body #section4 .careers .career #lineSec2_profesion {
           text-align: center;
           padding: 5px;
           color: #081c15;
           margin-bottom: 10px;
           font-size: 16px; }
-        body #section2 .careers .career img, body #section3 .careers .career img {
+        body #section2 .careers .career img, body #section3 .careers .career img, body #section4 .careers .career img {
           width: 100px;
           height: 100px;
           justify-self: center; }
-        body #section2 .careers .career .focus-in-expand, body #section3 .careers .career .focus-in-expand {
+        body #section2 .careers .career .focus-in-expand, body #section3 .careers .career .focus-in-expand, body #section4 .careers .career .focus-in-expand {
           animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @keyframes focus-in-expand {
@@ -232,28 +232,94 @@ body {
   100% {
     filter: blur(0px);
     opacity: 1; } }
-    body #section2 #aboutMe, body #section3 #aboutMe {
+    body #section2 #aboutMe, body #section3 #aboutMe, body #section4 #aboutMe {
       display: flex;
       flex-direction: column;
       row-gap: 15px;
       color: #081c15;
       margin: 10px; }
-      body #section2 #aboutMe p, body #section3 #aboutMe p {
+      body #section2 #aboutMe p, body #section3 #aboutMe p, body #section4 #aboutMe p {
         padding-left: 5px;
         border-left: outset 2px;
         text-align: center;
         line-height: 25px; }
-      body #section2 #aboutMe p:nth-child(2), body #section3 #aboutMe p:nth-child(2) {
+      body #section2 #aboutMe p:nth-child(2), body #section3 #aboutMe p:nth-child(2), body #section4 #aboutMe p:nth-child(2) {
         padding-left: 5px;
         display: none;
         text-align: left;
         border-right: outset 2px; }
   body #section3 {
     margin-top: 30px; }
-    body #section3 .projects {
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 5));
+    transform: translateX(calc(-250px * 5)); } }
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(110px); }
+  50% {
+    transform: translateX(calc(-125px)); }
+  75% {
+    transform: translateX(calc(-180px)); }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 5));
+    transform: translateX(calc(-250px)); } }
+    body #section3 .slider {
+      background: linear-gradient(45deg, #52b788, #40916c);
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+      height: 100px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      display: flex; }
+    body #section3 .slider::before, body #section3 .slider::after {
+      background: linear-gradient(to right, #081c15, #52b7889a);
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 100px;
+      z-index: 2; }
+    body #section3 .slider::after {
+      right: 0;
+      top: 0;
+      -webkit-transform: rotateZ(180deg);
+      transform: rotateZ(180deg); }
+    body #section3 .slider::before {
+      left: 0;
+      top: 0; }
+    body #section3 .slider .slide-track {
+      -webkit-animation: scroll 15s linear infinite;
+      animation: scroll 15s linear infinite;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: calc(250px * 3);
+      padding-left: 20px; }
+    body #section3 .slider .slide {
+      height: 50px;
+      width: 50px; }
+    body #section3 .slide img {
+      height: 100%;
+      width: 100%; }
+  body #section4 {
+    margin-top: 30px; }
+    body #section4 .projects {
       display: flex;
       flex-direction: column; }
-      body #section3 .projects .iphone-border {
+      body #section4 .projects blockquote {
+        text-align: center;
+        font-weight: 600;
+        color: #081c15;
+        width: 95%;
+        margin-bottom: 15px; }
+      body #section4 .projects .iphone-border {
         margin: auto;
         width: 300px;
         /* Ancho del div */
@@ -263,8 +329,9 @@ body {
         /* Radio de la esquina */
         background-color: #000;
         position: relative;
-        overflow: hidden; }
-      body #section3 .projects .iphone-border::before {
+        overflow: hidden;
+        margin-bottom: 15px; }
+      body #section4 .projects .iphone-border::before {
         content: "";
         position: absolute;
         top: 12px;
@@ -277,7 +344,7 @@ body {
         /* Radio del borde */
         box-sizing: border-box;
         z-index: 1; }
-      body #section3 .projects .iphone-border::after {
+      body #section4 .projects .iphone-border::after {
         content: "";
         position: absolute;
         bottom: 12px;
@@ -289,15 +356,33 @@ body {
         /* Color de la barra inferior */
         border-radius: 3px;
         z-index: 1; }
-      body #section3 .projects .screen {
+      body #section4 .projects .screen {
         position: relative;
         overflow: hidden;
-        width: 95%;
-        height: 98%;
-        border-radius: 36px;
+        width: 95.5%;
+        height: 97.5%;
+        border-radius: 34px;
         padding-left: 15px;
-        padding-top: 10px; }
-        body #section3 .projects .screen img {
+        padding-top: 11px; }
+        body #section4 .projects .screen img {
           width: 100%;
           height: 100%;
           border-radius: 36px; }
+      body #section4 .projects .screenProject2 {
+        position: relative;
+        overflow: hidden;
+        width: 96%;
+        height: 99%;
+        border-radius: 36px;
+        padding-left: 13px;
+        padding-top: 12px;
+        padding-bottom: 7px; }
+      body #section4 .projects .screenProject3 {
+        position: relative;
+        overflow: hidden;
+        width: 96%;
+        height: 99%;
+        border-radius: 36px;
+        padding-left: 13px;
+        padding-top: 12px;
+        padding-bottom: 7px; }
