@@ -314,6 +314,7 @@ body {
         font-weight: 600;
         color: #081c15;
         width: 95%;
+        margin-left: 8px;
         margin-bottom: 15px; }
       body #section4 .projects .iphone-border {
         margin: auto;
@@ -382,3 +383,47 @@ body {
         padding-left: 13px;
         padding-top: 12px;
         padding-bottom: 7px; }
+  body #thankYou {
+    padding: auto;
+    margin: 20px 30px 60px 70px;
+    color: #081c15; }
+    body #thankYou p {
+      text-justify: center;
+      min-width: max-content; }
+  body footer {
+    background: linear-gradient(45deg, #000000, #40916c);
+    display: flex;
+    justify-content: center;
+    border-radius: 0 120px 0 0; }
+    body footer .socialMediaContact {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body footer .socialMediaContact p {
+        text-align: left;
+        justify-content: left;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-top: 35px;
+        padding: 6px;
+        width: 95%; }
+      body footer .socialMediaContact .divisionFooter {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 30px; }
+        body footer .socialMediaContact .divisionFooter .lineSec {
+          border: none;
+          border-bottom: 1px solid #d8f3dc;
+          width: 65px;
+          margin-bottom: 12px; }
+      body footer .socialMediaContact .socialMediaList {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin-bottom: 15px; }
+        body footer .socialMediaContact .socialMediaList li {
+          display: flex;
+          align-items: center; }
