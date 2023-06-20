@@ -285,15 +285,18 @@ ul li {
     -webkit-transform: translateX(0);
     transform: translateX(110px);
   }
-  50% {
-    transform: translateX(calc(-125px));
-  }
-  75% {
-    transform: translateX(calc(-180px));
-  }
+  // 25% {
+  //   transform: translateX(-220px);
+  // }
+  // 50% {
+  //   transform: translateX(calc(-225px));
+  // }
+  // 75% {
+  //   transform: translateX(calc(-250px));
+  // }
   100% {
-    -webkit-transform: translateX(calc(-250px * 5));
-    transform: translateX(calc(-250px));
+    -webkit-transform: translateX(calc(-250px));
+    transform: translateX(calc(-270px));
   }
 }
 .slider {
@@ -325,8 +328,8 @@ ul li {
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 15s linear infinite;
-  animation: scroll 15s linear infinite;
+  -webkit-animation: scroll 17s linear infinite;
+  animation: scroll 17s linear infinite;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -412,7 +415,7 @@ ul li {
           border-radius: 36px;
         }
         
-}
+        }
         .screenProject2 {
           // @extend .screen;
           position: relative;
