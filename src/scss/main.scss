@@ -252,6 +252,7 @@ ul li {
       row-gap: 15px;
       color: #081c15;
       margin: 10px;
+      font-weight: 600;
       p {
         padding-left: 5px;  
         border-left: outset 2px;
@@ -285,15 +286,6 @@ ul li {
         -webkit-transform: translateX(0);
         transform: translateX(110px);
       }
-      // 25% {
-      //   transform: translateX(-220px);
-      // }
-      // 50% {
-      //   transform: translateX(calc(-225px));
-      // }
-      // 75% {
-      //   transform: translateX(calc(-250px));
-      // }
       100% {
         -webkit-transform: translateX(calc(-250px));
         transform: translateX(calc(-270px));
@@ -443,11 +435,12 @@ ul li {
   }
   #thankYou {
     padding: auto;
-    margin: 20px 30px 60px 70px;
+    margin: 25px 30px 60px 70px;
     color: #081c15;
     p {
       text-justify: center;
       min-width: max-content;
+      font-weight: 600;
     }
   }
   footer {
@@ -465,7 +458,7 @@ ul li {
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 1px;
-        margin-top: 35px;
+        margin-top: 45px;
         // margin-left: 2px;
         padding: 6px;
         width: 95%;
@@ -485,7 +478,7 @@ ul li {
       }
       .socialMediaList {
         display: flex;
-        gap: 18px;
+        gap: 25px;
         align-items: center;
         margin-bottom: 15px;
         li {

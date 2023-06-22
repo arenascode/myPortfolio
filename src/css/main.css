@@ -237,7 +237,8 @@ body {
       flex-direction: column;
       row-gap: 15px;
       color: #081c15;
-      margin: 10px; }
+      margin: 10px;
+      font-weight: 600; }
       body #section2 #aboutMe p, body #section3 #aboutMe p, body #section4 #aboutMe p {
         padding-left: 5px;
         border-left: outset 2px;
@@ -385,11 +386,12 @@ body {
         padding-bottom: 7px; }
   body #thankYou {
     padding: auto;
-    margin: 20px 30px 60px 70px;
+    margin: 25px 30px 60px 70px;
     color: #081c15; }
     body #thankYou p {
       text-justify: center;
-      min-width: max-content; }
+      min-width: max-content;
+      font-weight: 600; }
   body footer {
     background: linear-gradient(45deg, #000000, #40916c);
     display: flex;
@@ -405,7 +407,7 @@ body {
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 1px;
-        margin-top: 35px;
+        margin-top: 45px;
         padding: 6px;
         width: 95%; }
       body footer .socialMediaContact .divisionFooter {
@@ -421,7 +423,7 @@ body {
           margin-bottom: 12px; }
       body footer .socialMediaContact .socialMediaList {
         display: flex;
-        gap: 18px;
+        gap: 25px;
         align-items: center;
         margin-bottom: 15px; }
         body footer .socialMediaContact .socialMediaList li {
