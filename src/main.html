@@ -18,12 +18,28 @@
   <body>
     <section id="section1">
       <nav id="navBar">
-        <ul class="navBar_menu">
+        <button id="hamburger-btn">
+          <img src="./assets/img/menu.png" alt="">
+        </button>
+        <ul id="navBar_desktopMenu">
           <li><a href="#">Home</a></li>
           <li><a href="#whoIAm">About</a></li>
           <li><a href="#section4">Projects</a></li>
           <li><a href="#contactMe">Contact me</a></li>
         </ul>
+        <div id="navBar_mobileMenu">
+          <div class="mobileMenu_content">
+            <button id="closeModalBtn">
+              <img src="./assets/img/cerrar.png" alt="">
+            </button>
+            <ul class="links_menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#whoIAm">About</a></li>
+              <li><a href="#section4">Projects</a></li>
+              <li><a href="#contactMe">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <div class="content">
         <div class="visible">
@@ -169,16 +185,16 @@
             <div class="projectDescription">
               <h5 class="card-title">Advice Generator App</h5>
               <div class="card-text">
-                <p>Here I showcase my proeficiency in working with 3rd-party API's.</p>
+                <p>
+                  Here I showcase my proeficiency in working with 3rd-party
+                  API's.
+                </p>
                 <p>I used fetch to make the request.</p>
               </div>
               <h5 class="builtWith_title">Built With</h5>
               <div class="builtWith">
                 <img src="./assets/img/stack/html-5.png" alt="css-logo" />
-                <img
-                  src="./assets/img/stack/css-3.png"
-                  alt="html-logo"
-                />
+                <img src="./assets/img/stack/css-3.png" alt="html-logo" />
                 <img
                   src="./assets/img/stack/js.png"
                   alt=""
@@ -202,15 +218,15 @@
             <div class="projectDescription projectDescription2">
               <h5 class="card-title">Age Calculator App</h5>
               <div class="card-text">
-                <p>Here I showcase my proficiency in working with dates in JavaScript.</p>
+                <p>
+                  Here I showcase my proficiency in working with dates in
+                  JavaScript.
+                </p>
               </div>
               <h5 class="builtWith_title">Built With</h5>
               <div class="builtWith">
                 <img src="./assets/img/stack/html-5.png" alt="css-logo" />
-                <img
-                  src="./assets/img/stack/css-3.png"
-                  alt="html-logo"
-                />
+                <img src="./assets/img/stack/css-3.png" alt="html-logo" />
                 <img
                   src="./assets/img/stack/js.png"
                   alt=""
@@ -242,10 +258,7 @@
               <h5 class="builtWith_title">Built With</h5>
               <div class="builtWith">
                 <img src="./assets/img/stack/html-5.png" alt="css-logo" />
-                <img
-                  src="./assets/img/stack/css-3.png"
-                  alt="html-logo"
-                />
+                <img src="./assets/img/stack/css-3.png" alt="html-logo" />
                 <img
                   src="./assets/img/stack/js.png"
                   alt=""

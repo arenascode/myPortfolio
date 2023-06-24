@@ -28,8 +28,18 @@ body {
     height: 380px;
     border-radius: 0 0 0 130px;
     #navBar {
-      .navBar_menu {
-        display: flex;
+      // height: max-content;
+      #hamburger-btn {
+      display: block;
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      top: 17px;
+      right: 16px;
+      margin-bottom: 25px;
+      }
+      #navBar_desktopMenu {
+        display: none;
         column-gap: 8px;
         justify-content: end;
         padding: 5px;
@@ -47,17 +57,56 @@ body {
         transform: translateY(-50%);
         height: 70%;
         width: 1px;
-        background-color: var(--color-text-navbar); /* Color de la línea vertical */
-}
+        background-color: var(--color-text-navbar);
+        }
       }
-    }
+      #navBar_mobileMenu {
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 6;
+        background-color: #000;
+        background-color: rgba(0,0,0,0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition-property: opacity;
+        transition-duration: 0.7s;
+        transition-timing-function: ease-in-out;
+        .mobileMenu_content {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 60%;
+          background-color: #081c15;
+          z-index: 6;
+          #closeModalBtn {
+            height: 42px;
+            width: 42px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 10px;
+          }
+          .links_menu {
+            margin-top: 130px;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+          }
+        }
+      }
+}
+// HELLO WORLD greeting
     .content {
   width:200px;
   font-size:28px;
   line-height:40px;
   color:white;
   height:40px;
-  margin-top:45px;
+  padding-top:75px;
   margin-left:60px;
   
   &:before {
@@ -71,6 +120,7 @@ body {
     position:absolute;
     right:45px;
     line-height:40px;
+    overflow: hidden;
   }
   &:after, &:before {
     color: var(--color-background-page);
@@ -134,7 +184,7 @@ ul li {
       font-size: 18px;
       font-weight: 600;
       text-align: end;
-      margin: 35px 20px;
+      margin: 75px 20px;
       letter-spacing: 1px;
     }
     #introduction {
@@ -180,7 +230,7 @@ ul li {
     }
   }
   #section2 {
-    margin-top: 350px;
+    margin-top: 390px;
     .divisionSec2 {
     display: flex;
     align-items: center;
@@ -210,6 +260,7 @@ ul li {
       margin: 40px auto;
       padding: 10px;
       border-radius: 20px;
+      overflow: hidden;
       .career {
         display: flex;
         flex-direction: column;
@@ -338,6 +389,7 @@ ul li {
       width: 100%;
     }
   }
+  // ------- PROJECTS ---------
   #section4 {
       @extend #section2;
       margin-top: 30px;
